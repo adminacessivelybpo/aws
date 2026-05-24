@@ -1,0 +1,300 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Premium creative portfolio landing page with featured work, services, and contact."
+    />
+    <title>Christian Ninobla | Video Editing Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;500;700;800&family=Manrope:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="Home">
+        <span>CHRISTIAN</span>
+        <span class="brand-accent">NINOBLA</span>
+      </a>
+      <nav class="site-nav" aria-label="Primary">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <a class="header-cta" href="#contact">Book an Edit</a>
+    </header>
+
+    <main>
+      <section class="hero" aria-label="Hero">
+        <div class="hero-video-wrap" id="heroVideoWrap">
+          <!-- Replace video source path in script.js only (HERO_VIDEO_SRC) -->
+          <video
+            id="heroVideo"
+            class="hero-video"
+            autoplay
+            muted
+            loop
+            playsinline
+            aria-label="Background showreel"
+          ></video>
+          <div class="video-fallback" id="videoFallback" aria-hidden="true">
+            <p>Showreel placeholder: add your video in <strong>assets/video/showreel.mp4</strong></p>
+          </div>
+          <div class="hero-overlay"></div>
+        </div>
+
+        <div class="hero-content container reveal">
+          <!-- Replace headline and supporting text below -->
+          <p class="eyebrow">Video Editing Portfolio</p>
+          <h1>Cinematic video edits that make your brand impossible to ignore.</h1>
+          <p class="hero-copy">
+            I am Christian Ninobla, a video editor focused on storytelling, sharp pacing, and
+            performance-driven edits for brands, creators, and campaigns.
+          </p>
+          <a class="button button-primary" href="#work">Watch Featured Work</a>
+        </div>
+      </section>
+
+      <section class="section container" id="work" aria-label="Featured work">
+        <div class="section-head reveal">
+          <p class="eyebrow">Sample Videos</p>
+          <h2>Video Samples</h2>
+        </div>
+
+        <div class="featured-grid">
+          <!-- Uploaded videos are shown here; duplicate a card to add more -->
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work1.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Performance Campaign</p>
+              <h3>Vanta Motion</h3>
+              <p>
+                Full-funnel launch with narrative ad creatives and optimized conversion pathways across
+                paid channels.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work2.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Interactive Web Experience</p>
+              <h3>Obsidian Labs</h3>
+              <p>
+                Premium responsive interface design and front-end engineering for a tech-forward product
+                launch.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work3.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Video + Paid Media</p>
+              <h3>Northlight Atelier</h3>
+              <p>
+                Multi-format cinematic edits and ad distribution strategy focused on qualified lead growth.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work4.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Campaign Storytelling</p>
+              <h3>Pulse Vision</h3>
+              <p>
+                Edit pacing, visual rhythm, and sound design combined to maximize watch time and message
+                retention.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work5.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Brand Reel</p>
+              <h3>Creator Spotlight</h3>
+              <p>
+                Premium short-form edit for social channels, focused on hook strength and conversion-ready
+                storytelling.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work6.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Social Creative</p>
+              <h3>Momentum Cut</h3>
+              <p>
+                High-energy short-form edit designed for stronger hooks, improved retention, and clear
+                narrative flow.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work7.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Commercial Highlight</p>
+              <h3>Launch Sequence</h3>
+              <p>
+                Polished ad-style edit combining transitions, pacing, and audio balance for premium visual
+                impact.
+              </p>
+            </div>
+          </article>
+
+          <article class="featured-card reveal">
+            <video class="featured-media work-video sample-video" muted playsinline controls preload="metadata">
+              <source src="video/work8.mp4" type="video/mp4" />
+            </video>
+            <div class="featured-copy">
+              <p class="meta">Promo Edit</p>
+              <h3>Signature Cut</h3>
+              <p>
+                Clean transitions and pacing-first editing crafted for social performance and premium brand
+                presentation.
+              </p>
+            </div>
+          </article>
+        </div>
+        <p class="section-more reveal">and more</p>
+      </section>
+
+      <section class="section section-about" id="about" aria-label="About">
+        <div class="container about-layout">
+          <div class="reveal">
+            <p class="eyebrow">About</p>
+            <h2>Studio-grade editing with strategy behind every cut.</h2>
+          </div>
+          <div class="about-text reveal">
+            <!-- Replace this intro with your personal/brand story -->
+            <p>
+              I am Christian Ninobla, a video editor helping businesses and personal brands transform raw
+              footage into high-impact stories. From short-form social edits to full campaign films, every
+              project is crafted to hold attention and move viewers to action.
+            </p>
+            <ul class="skills-list" aria-label="Skills summary">
+              <li>Video Editing &amp; Post Production</li>
+              <li>Color Grading &amp; Sound Polish</li>
+              <li>Reels, Ads &amp; YouTube Formats</li>
+              <li>Creative Strategy for Retention</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="services" aria-label="Services">
+        <div class="section-head reveal">
+          <p class="eyebrow">Capabilities</p>
+          <h2>Services</h2>
+        </div>
+
+        <div class="services-grid">
+          <article class="service reveal">
+            <h3>Video Editing</h3>
+            <p>High-end campaign edits, social cuts, and cinematic showreels tailored for engagement.</p>
+          </article>
+          <article class="service reveal">
+            <h3>Google Ads</h3>
+            <p>Search, display, and YouTube media buying with focused acquisition and ROAS growth.</p>
+          </article>
+          <article class="service reveal">
+            <h3>Facebook Ads</h3>
+            <p>Data-backed creative testing and campaign architecture across Meta placements.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="portfolio" aria-label="Portfolio gallery">
+        <div class="section-head reveal">
+          <p class="eyebrow">Portfolio</p>
+          <h2>Photo Gallery</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <!-- Replace placeholders with your edited graphics/photos -->
+          <article class="gallery-item has-photo reveal">
+            <img class="gallery-image" src="graphic%20edit/poster.jpg" alt="Edited poster design sample" loading="lazy" />
+            <span>Poster Edit</span>
+          </article>
+          <article class="gallery-item has-photo reveal">
+            <img class="gallery-image" src="graphic%20edit/trailer.jpg" alt="Edited trailer graphic sample" loading="lazy" />
+            <span>Trailer Graphic Edit</span>
+          </article>
+          <article class="gallery-item has-photo reveal">
+            <img class="gallery-image" src="graphic%20edit/pricelist%20sample.jpg" alt="Edited pricelist design sample" loading="lazy" />
+            <span>Pricelist Sample</span>
+          </article>
+        </div>
+        <p class="section-more reveal">and more</p>
+      </section>
+
+      <section class="section container" id="contact" aria-label="Contact">
+        <div class="section-head reveal">
+          <p class="eyebrow">Contact</p>
+          <h2>Let’s create your next standout video.</h2>
+        </div>
+
+        <div class="contact-layout">
+          <form class="contact-form reveal" action="#" method="post" novalidate>
+            <!-- Replace placeholders as needed; connect to your backend/form service later -->
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" placeholder="Your name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" placeholder="you@example.com" required />
+
+            <label for="message">Project Brief</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us about your goals"></textarea>
+
+            <button class="button button-primary" type="submit">Send Inquiry</button>
+          </form>
+
+          <aside class="contact-info reveal">
+            <!-- Replace email and social placeholders below -->
+            <p>Email: hello@christianninobla.com</p>
+            <p>Instagram: @christianninobla</p>
+            <p>LinkedIn: /in/christianninobla</p>
+            <p>YouTube: /@christianninobla</p>
+          </aside>
+        </div>
+      </section>
+    </main>
+
+    <div class="photo-preview" id="photoPreview" aria-hidden="true">
+      <img id="photoPreviewImage" alt="Expanded gallery preview" />
+    </div>
+
+    <footer class="site-footer">
+      <p>© <span id="year"></span> Christian Ninobla. All rights reserved.</p>
+      <a href="#top">Back to top</a>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
