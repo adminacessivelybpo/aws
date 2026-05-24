@@ -1,74 +1,92 @@
-# Christian Ninobla Video Editing Portfolio
+# Ferdinand Dablo Portfolio
 
-A modern, cinematic single-page portfolio site built with plain HTML, CSS, and JavaScript.
+Production-ready animated portfolio built with Next.js (App Router), TypeScript, Tailwind CSS, and Framer Motion.
+
+## Features
+
+- Next.js 14+ architecture with TypeScript
+- Tailwind CSS styling with custom visual theme
+- Framer Motion animations (scroll-triggered, staggered, hover, modals, parallax)
+- Fully responsive layout (mobile/tablet/desktop)
+- Dark mode support with system preference fallback
+- Accessible navigation, forms, keyboard interactions, and ARIA labels
+- SEO metadata, Open Graph, Twitter cards
+- Lazy-loaded images via Next.js Image
+- Contact form with API route and Nodemailer integration
+- Production-oriented component and data structure
 
 ## Project Structure
 
-```
-.
-├── index.html
-├── styles.css
-├── script.js
-├── assets/
-│   └── video/
-│       └── .gitkeep
-└── README.md
-```
+- app/layout.tsx - global metadata, fonts, providers
+- app/page.tsx - page composition for all sections
+- app/loading.tsx - animated loading state
+- app/api/contact/route.ts - contact email API endpoint
+- app/globals.css - theme variables and global styles
+- components/layout/* - navbar and footer
+- components/sections/* - all portfolio sections
+- components/ui/* - reusable UI building blocks
+- components/providers/* - theme and transition providers
+- lib/data.ts - sample content and configuration
+- lib/animations.ts - reusable animation presets
+- types/index.ts - TypeScript interfaces
+- .env.example - required environment variables
 
-## How To Run
+## Local Development
 
-This is a static site, so you can run it with any local server.
+1. Install dependencies:
 
-Option 1: VS Code Live Server extension
-1. Open `index.html`.
-2. Start Live Server.
+   npm install
 
-Option 2: Python HTTP server
-1. Run:
+2. Configure environment:
 
-```bash
-python3 -m http.server 5500
-```
+   cp .env.example .env.local
 
-2. Visit:
+3. Update .env.local with your SMTP credentials.
 
-```text
-http://localhost:5500
-```
+4. Start development server:
 
-## Video Setup (Single Path Replacement)
+   npm run dev
 
-The hero video source is controlled from one place only:
+5. Open http://localhost:3000
 
-1. Put your video file in:
+## Contact Form Email Setup
 
-```text
-assets/video/showreel.mp4
-```
+The contact section posts to /api/contact and sends mail with Nodemailer.
 
-2. If your file uses another name/path, edit this constant in `script.js`:
+Required environment variables:
 
-```js
-const HERO_VIDEO_SRC = "assets/video/showreel.mp4";
-```
+- SMTP_HOST
+- SMTP_PORT
+- SMTP_USER
+- SMTP_PASS
+- CONTACT_FROM_EMAIL
+- CONTACT_TO_EMAIL
 
-If the video is missing or cannot autoplay, the page automatically shows a styled fallback background/message.
+Example SMTP providers: SendGrid SMTP, Mailgun SMTP, Postmark SMTP, Brevo SMTP.
 
-## Easy Content Editing
+## Deployment
 
-All major text is in `index.html` with comments marking what to replace:
-- Hero headline and supporting copy
-- Featured project cards
-- About intro
-- Services
-- Gallery items
-- Testimonial/stats
-- Contact details
+### Vercel
 
-Design system variables (colors, spacing, radii) are in `styles.css` under `:root`.
+1. Push repository to GitHub.
+2. Import project into Vercel.
+3. Add all variables from .env.example in Vercel Project Settings.
+4. Deploy.
+
+### Docker (optional)
+
+Use standard Next.js production build flow:
+
+1. npm run build
+2. npm run start
+
+For containerized deployments, map runtime environment variables and expose port 3000.
+
+## Quality Checks
+
+- Lint: npm run lint
+- Build: npm run build
 
 ## Notes
 
-- Fully responsive for desktop, tablet, and mobile.
-- Includes smooth scrolling, reveal transitions, and hover effects.
-- Respects reduced-motion user preferences.
+Replace placeholder social/profile/project links and sample data in lib/data.ts with your real portfolio content before publishing.
